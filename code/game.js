@@ -101,7 +101,7 @@ class App extends Application {
     let soundtrackElement = document.createElement("audio");
     soundtrackElement.setAttribute("id", "main-soundtrack");
     soundtrackElement.className = "audio";
-    soundtrackElement.src = "../common/sound/horror-atmosphere-background.mp3"
+    soundtrackElement.src = "/Mansion-Of-Terror-deploy/common/sound/horror-atmosphere-background.mp3"
     soundtrackElement.volume = this.volume;
     soundtrackElement.loop = true;
     soundtrackElement.play();
