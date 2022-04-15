@@ -172,7 +172,7 @@ class App extends Application {
     // add sounds here
     const footsteps = document.createElement("audio");
     footsteps.setAttribute("id", "footsteps-sound")
-    footsteps.src = "../common/sound/footsteps.mp3";
+    footsteps.src = "/Mansion-Of-Terror-deploy/common/sound/footsteps.mp3";
     footsteps.loop = true;
     document.getElementById("audio-div").appendChild(footsteps);
 
