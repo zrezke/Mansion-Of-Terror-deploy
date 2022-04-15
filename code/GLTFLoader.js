@@ -68,8 +68,8 @@ export class GLTFLoader {
     }
     
     async load(sceneDef) {
-        this.gltfUrl = new URL(`../common/models/${sceneDef.name}/${sceneDef.name}.gltf`, window.location);
-        this.gltf = await this.fetchJson(`../common/models/${sceneDef.name}/${sceneDef.name}.gltf`);
+        this.gltfUrl = new URL(`/Mansion-Of-Terror-deploy/common/models/${sceneDef.name}/${sceneDef.name}.gltf`, window.location);
+        this.gltf = await this.fetchJson(`/Mansion-Of-Terror-deploy/common/models/${sceneDef.name}/${sceneDef.name}.gltf`);
         this.defaultScene = this.gltf.scene || 0;
         this.maxDuration = sceneDef.maxDuration;
         this.interactables = sceneDef.interactables;
